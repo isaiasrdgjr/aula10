@@ -1,3 +1,4 @@
+import random
 import os
 
 
@@ -22,10 +23,9 @@ def dividir(n1, n2):
 
 
 os.system('cls')
-num1 = float(input('Informe o número: '))
+num1 = random.randint(1, 10)
+num2 = random.randint(1, 10)
 sinal = input('Informe o sinal de cálculo: ')
-num2 = float(input('Informe o número: '))
-
 
 if sinal == '+':
     soma = somar(num1, num2)
@@ -44,4 +44,4 @@ elif sinal == '/':
     print(f'divisão = {divisao:.2f}')
 
 else:
-    print('Digite um sinal válido!')
+    print('Informe um sinal válido!')
