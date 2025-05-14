@@ -45,4 +45,4 @@ match sinal:
         print(f'divisão = {divisao:.2f}')
 
     case _:
-        print('Informe um sinal válido!')
+        print('Informe um sinal válido! ')
