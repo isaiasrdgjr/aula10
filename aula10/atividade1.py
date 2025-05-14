@@ -23,25 +23,26 @@ def dividir(n1, n2):
 
 
 os.system('cls')
-num1 = random.randint(1, 10)
-num2 = random.randint(1, 10)
+num1 = random.randint(1, 100)
+num2 = random.randint(1, 100)
 sinal = input('Informe o sinal de cálculo: ')
 
-if sinal == '+':
-    soma = somar(num1, num2)
-    print(f'Soma = {soma:.2f}')
+match sinal:
+    case '+':
+        soma = somar(num1, num2)
+        print(f'Soma = {soma:.2f}')
 
-elif sinal == '-':
-    subtracao = subtrair(num1, num2)
-    print(f'subtração = {subtracao:.2f}')
+    case '-':
+        subtracao = subtrair(num1, num2)
+        print(f'subtração = {subtracao:.2f}')
 
-elif sinal == '*':
-    multiplicacao = multiplicar(num1, num2)
-    print(f'multiplicação = {multiplicacao:.2f}')
+    case '*':
+        multiplicacao = multiplicar(num1, num2)
+        print(f'multiplicação = {multiplicacao:.2f}')
 
-elif sinal == '/':
-    divisao = dividir(num1, num2)
-    print(f'divisão = {divisao:.2f}')
+    case '/':
+        divisao = dividir(num1, num2)
+        print(f'divisão = {divisao:.2f}')
 
-else:
-    print('Informe um sinal válido!')
+    case _:
+        print('Informe um sinal válido!')
